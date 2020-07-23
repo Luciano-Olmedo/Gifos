@@ -1,0 +1,172 @@
+@import './variables.scss';
+
+.seccion1{
+    padding: 64px 0 0 0;
+    margin-left: 90px;
+   .sugerencia{
+        background: #FFFAFE;
+        border: 1px solid #E6BBE2;
+        box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+        
+        margin-top: 10px;
+        width: 1200px;
+        height: 32px;
+    }
+    
+   
+    
+   .gifs1{
+    
+    padding:22px 0;
+    .cards{
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;           
+        width: 288px;
+        height: 313px;
+        margin-right: 16px;
+        
+        .bodyCards{
+            width: 280px;
+            height: 280px;
+            margin: 0 4px 4px 4px;
+            display: flex;
+            align-items: flex-end;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .seeMore{
+                width: 81px;
+                height: 34px;
+                position: absolute;
+                background-color: $secondColor;
+                margin:-7px 15px;
+                
+            }
+        }
+        
+        .contenedor-{
+             
+            width: 280px;
+            height: 24px;
+            background-image: linear-gradient(270deg, $firstColor 0%, $secondColor 100%);
+            margin: 3px 4px 2px 4px;
+            h3{
+                 font-size: 14px;
+                  width: 90%;
+                  color:#fff;
+                  margin: 3px 0 3px 2px;
+                
+            }
+            button{
+                border: none;
+                background: transparent;
+                margin:5px 4px;
+                width: 16px;
+                height: 14px;
+            }
+        }
+    
+    }
+    
+   
+  
+   }
+   .gifs2{
+       margin-top: 16px;      
+                     
+        .cards2{
+            width: 592px;
+            height: 298px;
+            background-color: grey;
+            margin-right: 16px;
+            margin-top:16px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .cards{
+            
+            width: 286px;
+            height: 296px;            
+            margin-right: 16px;
+            margin-top:16px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+
+           /* .contenedor-{
+                position: relative;
+                width: 286px;
+                height: 296px;
+                margin-bottom: 10px;
+                
+                align-items: flex-end;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .containertitle{
+                   position: absolute;
+                   background-color: green;
+                   width: 100%;
+                    .titulito{
+                        font-size: 14px;
+                        height: 24px;
+                        color: #ffffff;
+                        
+                    }
+                    
+                              
+                }
+    
+                
+            }
+           */
+        }
+        .cards3{
+            background-color: red;
+            width: 286px;
+            height: 296px;            
+            margin-right: 16px;
+            margin-top:16px;
+            .contenedor-{
+                position: relative;
+                width: 286px;
+                height: 296px;
+                margin-bottom: 10px;
+                
+                align-items: flex-end;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .containertitle{
+                   position: absolute;
+                   background-color: green;
+                   width: 100%;
+                    .titulito{
+                        font-size: 14px;
+                        height: 24px;
+                        color: #ffffff;
+                        
+                    }
+                    
+                              
+                }
+            } 
+        }
+        
+   }
+
+
+   
+
+
+}
+
+
+

@@ -1,0 +1,122 @@
+@import './variables.scss';
+
+header{
+
+    div{
+        
+        p{
+            height: 23px;
+            background-image: linear-gradient(270deg, $firstColor 0%, $secondColor 100%);
+            box-shadow: 0 1px 0 0 #110038
+        }
+        
+    }
+    .logo{
+        padding: 39px 0 0 91px;
+    }
+    .container1{
+        padding:44px 16px 0 0;
+
+    }
+    .boton1{
+        width: 144px;
+        height: 36px;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        margin:0 16px;
+        
+        
+    }
+    .boton2{        
+        width: 131px;
+        height: 36px;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    }
+    .boton3{
+        margin: -4px;
+        width: 36px;
+        height: 36px;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    }
+    .menu-desplegable{
+        width: 167px;
+        padding: 10px 10px 0 10px;
+        background-color: brown;
+        margin-left:180px;
+        position: absolute;
+        z-index: 1;
+        button{
+            width:150px;
+            height: 36px;
+            margin-bottom: 10px;
+        }
+    }
+    
+
+    .container-{
+        
+        padding-left: 90px;
+        .container2{        
+            width: 1200px;
+            height: 99px;            
+            position: relative;
+            background: #E6E6E6;
+            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+            
+            
+            .title {
+                background-image: linear-gradient(270deg, $firstColor 0%, $secondColor 100%);
+                height: 24px;
+                padding: 3px;
+                margin: 3px;
+                h2{                    
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    letter-spacing: 0;                             
+                   
+                }
+            }                 
+            
+            input{                    
+                margin:15px;                
+                height: 48px;
+            }
+            #button_search{
+                width: 102px;
+                height: 36px;
+                margin-top: 18px;        
+            }            
+            .desplegable{
+           
+                background: #E6E6E6;
+                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+                width: 1200px;
+                height: 160px;
+                margin-top:99px;
+                padding:16px 15px;                
+                position: absolute;                
+                .items{
+                    background: #F0F0F0;
+                    border: 1px solid #808080;
+                    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                    width: 1057px;
+                    height: 36px;
+                    text-align: start;
+                    margin-bottom: 10px;                    
+                }
+            }
+        
+        }       
+
+    }
+
+    
+    
+    
+    
+}

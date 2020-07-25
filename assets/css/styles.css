@@ -286,7 +286,7 @@ section {
     width: 832px;
     height: 434px;
     margin: 11px 17px 24px 11px; }
-  .seccionVideo .containerGeneral .capturar {
+  .seccionVideo .containerGeneral button {
     position: relative;
     justify-items: flex-end;
     width: 180px;
@@ -294,7 +294,7 @@ section {
     background: #F7C9F3;
     border: 1px solid #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
-    .seccionVideo .containerGeneral .capturar div {
+    .seccionVideo .containerGeneral button div {
       position: absolute;
       border: 1px solid #110038;
       box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
@@ -302,9 +302,9 @@ section {
       height: 36px;
       top: -1px;
       left: -1px; }
-      .seccionVideo .containerGeneral .capturar div img {
+      .seccionVideo .containerGeneral button div img {
         margin: 8px; }
-    .seccionVideo .containerGeneral .capturar h5 {
+    .seccionVideo .containerGeneral button h5 {
       text-align: center;
       font-family: 'ChakraPetch-Regular';
       font-size: 16px;
@@ -312,5 +312,11 @@ section {
       letter-spacing: 0;
       text-align: center;
       line-height: 18px; }
+  .seccionVideo .containerGeneral .listo {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF; }
+    .seccionVideo .containerGeneral .listo h5 {
+      color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */

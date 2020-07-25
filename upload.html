@@ -18,7 +18,7 @@
                 <img id="logotipo"src="./assets/images/gifOF_logo.png" alt="logo">
             </div>
    </header>
-   <section class="cualquiera" style="justify-content: center">
+   <section class="cualquiera" id="make-Gif" style="justify-content: center">
    <div class="col-6  containerGeneral"  >
         <h3 class=" makeGif col-12">Crear Guifos</h3>
         <div class="tituloCrear col-12 cualquiera">
@@ -46,7 +46,7 @@
      </div>
     </section > 
     
-    <section class="seccionVideo cualquiera col-12" style="justify-content: center">
+    <section class="seccionVideo cualquiera col-12" id="seccion-Video" style="justify-content: center">
         <div class="containerGeneral col-7"  >
             <h3 class=" makeGif col-12">Crear Guifos</h3>
             <div class="videoContainer">
@@ -58,17 +58,28 @@
             <div class="cualquiera" style="justify-content: flex-end">
                 <button class="capturar">
                     <div>
-                        <img src="./assets/images/camera.svg" alt="REC">
+                        <img src="./assets/images/camera.svg" alt="camera">
                     </div>
                     <h5>Capturar</h5>
                 </button>
-
-                <button class="comenzar">Comenzar</button>
+                <button class="listo">
+                    <div>
+                        <img src="./assets/images/recording.svg" alt="REC">
+                    </div>
+                    <h5>Listo</h5>
+                </button>
+                <div class="buttons cualquiera" style="justify-content: flex-end">
+                    <button id="repeatCapture">Repetir Captura</button>
+                    <button id="uploadGif">Subir Gif</button>
+                </div>      
+               
             </div>      
 
         </div>
 
+
     </section>
+    <script src="./assets/scripts/upload.js"></script>
     
   
 </body>

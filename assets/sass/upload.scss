@@ -69,7 +69,7 @@ section{
             margin:11px 17px 24px 11px;
             
         }
-        .capturar{
+        button{
             
            
             position: relative;
@@ -104,6 +104,15 @@ section{
             }
             
 
+        }
+        .listo{
+            background: #FF6161;
+            border: 1px solid #110038;
+            box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+            h5{
+                color:#ffffff;
+                
+            }
         }
     }
 

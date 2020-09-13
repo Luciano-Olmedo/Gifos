@@ -286,6 +286,24 @@ section {
     width: 832px;
     height: 434px;
     margin: 11px 17px 24px 11px; }
+    .seccionVideo .containerGeneral .videoContainer #video_init {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: #FFFFFF;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+      padding: 3px; }
+  .seccionVideo .containerGeneral .timer-input {
+    margin-right: 21px; }
+    .seccionVideo .containerGeneral .timer-input h3 {
+      width: 124px;
+      height: 36px;
+      background: #FFFFFF;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+      text-align: center;
+      padding: 7px; }
   .seccionVideo .containerGeneral button {
     position: relative;
     justify-items: flex-end;
@@ -315,8 +333,19 @@ section {
   .seccionVideo .containerGeneral .listo {
     background: #FF6161;
     border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF; }
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    margin-left: 198px; }
     .seccionVideo .containerGeneral .listo h5 {
       color: #ffffff; }
+
+.seccion1 .mis_gifos {
+  margin-top: 16px; }
+  .seccion1 .mis_gifos .cards {
+    width: 288px;
+    height: 298px;
+    margin: 0 16px 16px 0; }
+    .seccion1 .mis_gifos .cards img {
+      width: 100%;
+      height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

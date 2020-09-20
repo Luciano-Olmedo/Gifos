@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -17,8 +16,12 @@
         </div>
         <div class="cualquiera col-12">
             <div class="logo col-6">
-                <img id="logotipo" src="./assets/images/gifOF_logo.png" alt="logo">
+                <a href="index.html">
+                    <img id="arrow" src="./assets/images/arrow.svg" alt="arrow">
+                    <img id="logotipo" src="./assets/images/gifOF_logo.png" alt="logo">
+                </a>
             </div>
+        </div>
     </header>
     <section class="cualquiera" id="make-Gif" style="justify-content: center">
         <div class="col-6  containerGeneral">
@@ -43,7 +46,6 @@
                 <button class="cancelar" onclick="cancelarCaptura()">Cancelar</button>
                 <button class="comenzar">Comenzar</button>
             </div>
-
         </div>
     </section>
 
@@ -51,7 +53,15 @@
         <div class="containerGeneral col-7">
             <h3 id="titulito_" class=" makeGif col-12">Un Chequeo Antes de Empezar</h3>
             <div class="videoContainer">
-                <video id="video_init" src=""></video>
+                <video id="video_init" src="#"></video>
+            </div>
+            <div class="seccionGlobo">
+                <img src="./assets/images/globe_img.png" alt="globe">
+                <h3>Estamos subiendo tu guifo…</h3>
+                <div class="col-12 progress-div">
+                    <progress id="file" value="0" max="100"></progress>
+                </div>
+                <p>Tiempo restante: <span>38 años</span> algunos minutos</p>
             </div>
             <div class="cualquiera" style="justify-content: flex-end">
                 <!--timer-->
@@ -66,22 +76,53 @@
                 <button id="uploadGif">
                     Subir Gif
                 </button>
-                <button class="capturar">
+                <div class="capturar button_">
                     <div>
                         <img src="./assets/images/camera.svg" alt="camera">
                     </div>
                     <h5>Capturar</h5>
-                </button>
-                <button class="listo">
+                </div>
+                <div class="listo button_">
                     <div>
                         <img src="./assets/images/recording.svg" alt="REC">
                     </div>
                     <h5>Listo</h5>
+                </div>
+                <button class="cancelar_" onclick="cancelarCaptura()">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+        <div class="Éxito">
+            <div class="makeGif col-12">
+                <h3 class="col-11">
+                    Guifo Subido Con Éxito
+                </h3>
+                <a href="index.html"><img src="./assets/images/close.svg" alt="close"></a>
+            </div>
+            <div class="cualquiera">
+                <div class="container_imgFinal">
+                    <img src="#" alt="">
+                </div>
+                <div class="col-4 container_buttons">
+                    <h3>Guifo creado con éxito</h3>
+                    <button>
+                        Copiar Enlace Guifo
+                    </button>
+                    <button>
+                        Descargar Guifo
+                    </button>
+                </div>
+            </div>
+            <div class="Listo_final">
+                <button>
+                    Listo
                 </button>
             </div>
 
         </div>
     </section>
+
     <section id="seccionMisGifos" class="seccion1 cualquiera col-12">
         <div class="today  sugerencia col-10">
             <h3>Mis gifos </h3>
@@ -91,10 +132,7 @@
         </div>
     </section>
     <script src="./assets/scripts/upload.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/R
-ecordRTC.js" type="text/javascript"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
 </body>
 
 </html>

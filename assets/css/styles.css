@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -44,6 +45,11 @@ header div p {
   box-shadow: 0 1px 0 0 #110038; }
 header .logo {
   padding: 39px 0 0 91px; }
+  header .logo a {
+    text-decoration: none; }
+    header .logo a #arrow {
+      padding-bottom: 10px;
+      margin-right: 7px; }
 header .container1 {
   padding: 44px 16px 0 0; }
 header .boton1 {
@@ -122,17 +128,23 @@ header .container- {
   padding: 64px 0 0 0;
   margin-left: 90px; }
   .seccion1 .sugerencia {
-    background: #FFFAFE;
-    border: 1px solid #E6BBE2;
-    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    background: #fffafe;
+    border: 1px solid #e6bbe2;
+    box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
     margin-top: 10px;
     width: 1200px;
     height: 32px; }
+    .seccion1 .sugerencia h3 {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 14px;
+      color: #110038;
+      letter-spacing: 0;
+      margin: 7px; }
   .seccion1 .gifs1 {
     padding: 22px 0; }
     .seccion1 .gifs1 .cards {
-      background: #E6E6E6;
-      box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+      background: #e6e6e6;
+      box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
       width: 288px;
       height: 313px;
       margin-right: 16px; }
@@ -183,34 +195,34 @@ header .container- {
       height: 296px;
       margin-right: 16px;
       margin-top: 16px;
-       /* .contenedor-{
-            position: relative;
-            width: 286px;
-            height: 296px;
-            margin-bottom: 10px;
-            
-            align-items: flex-end;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            .containertitle{
-               position: absolute;
-               background-color: green;
-               width: 100%;
-                .titulito{
-                    font-size: 14px;
-                    height: 24px;
-                    color: #ffffff;
-                    
-                }
-                
-                          
-            }
-
-            
-        }
-       */ }
+    /* .contenedor-{
+              position: relative;
+              width: 286px;
+              height: 296px;
+              margin-bottom: 10px;
+              
+              align-items: flex-end;
+              img{
+                  width: 100%;
+                  height: 100%;
+              }
+              .containertitle{
+                 position: absolute;
+                 background-color: green;
+                 width: 100%;
+                  .titulito{
+                      font-size: 14px;
+                      height: 24px;
+                      color: #ffffff;
+                      
+                  }
+                  
+                            
+              }
+  
+              
+          }
+         */ }
       .seccion1 .gifs2 .cards img {
         width: 100%;
         height: 100%; }
@@ -244,99 +256,193 @@ header .container- {
 section {
   margin-top: 78px; }
   section .containerGeneral {
-    background: #E6E6E6;
-    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
     padding: 3px; }
     section .containerGeneral .makeGif {
       color: #ffffff;
-      background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-      padding-left: 4px; }
+      background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+      padding-left: 4px;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 14px; }
     section .containerGeneral .tituloCrear {
       padding: 30px 0 7px 25px; }
       section .containerGeneral .tituloCrear img {
         margin-right: 16px; }
     section .containerGeneral p {
       padding-left: 73px;
-      font-family: 'ChakraPetch-Regular';
-      font-size: 14px;
+      font-family: "Chakra Petch", sans-serif;
+      font-size: 15px;
       color: #110038;
       letter-spacing: 0;
-      line-height: 20px; }
+      line-height: 28px; }
     section .containerGeneral button {
-      background: #F7C9F3;
+      background: #f7c9f3;
       border: 1px solid #110038;
-      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
       width: 144px;
       height: 36px;
-      margin: 28px 36px 36px 0; }
+      margin: 28px 36px 36px 0;
+      font-size: 16px; }
     section .containerGeneral .cancelar {
-      background: #FFF4FD;
+      background: #fff4fd;
       margin-right: 16px; }
     section .containerGeneral .comenzar {
-      background: #F7C9F3; }
+      background: #f7c9f3; }
+    section .containerGeneral #repeatCapture {
+      margin-left: 75px;
+      background: #fff4fd;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+    section .containerGeneral .cancelar_ {
+      background: #FFF4FD;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
 
-.seccionVideo .containerGeneral {
-  width: 860px;
-  height: 548px; }
-  .seccionVideo .containerGeneral button {
-    margin: 0 16px 16px 0; }
-  .seccionVideo .containerGeneral .videoContainer {
+.seccionVideo {
+  margin-bottom: 268px; }
+  .seccionVideo .containerGeneral {
+    width: 860px;
+    height: 548px; }
+    .seccionVideo .containerGeneral button {
+      margin: 0 16px 16px 0; }
+    .seccionVideo .containerGeneral .videoContainer {
+      display: none;
+      background: #e6e6e6;
+      box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+      width: 832px;
+      height: 434px;
+      margin: 11px 17px 24px 11px; }
+      .seccionVideo .containerGeneral .videoContainer #video_init {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #ffffff;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+        padding: 3px; }
+    .seccionVideo .containerGeneral .timer-input {
+      margin-right: 21px; }
+      .seccionVideo .containerGeneral .timer-input h3 {
+        width: 124px;
+        height: 36px;
+        background: #ffffff;
+        border: 1px solid #979797;
+        box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+        text-align: center;
+        padding: 7px; }
+    .seccionVideo .containerGeneral .button_ {
+      position: relative;
+      justify-items: flex-end;
+      width: 180px;
+      height: 36px;
+      background: #f7c9f3;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      margin-right: 9px; }
+      .seccionVideo .containerGeneral .button_ div {
+        position: absolute;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+        width: 36px;
+        height: 36px;
+        top: -1px;
+        left: -1px; }
+        .seccionVideo .containerGeneral .button_ div img {
+          margin: 8px; }
+      .seccionVideo .containerGeneral .button_ h5 {
+        text-align: center;
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 16px;
+        color: #110038;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 18px;
+        margin: 8px; }
+    .seccionVideo .containerGeneral .listo {
+      background: #ff6161;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+      margin-left: 198px; }
+      .seccionVideo .containerGeneral .listo h5 {
+        color: #ffffff; }
+    .seccionVideo .containerGeneral .seccionGlobo {
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+      margin: 8px 14px 21px 8px;
+      width: 838px;
+      height: 440px;
+      padding-top: 139px; }
+      .seccionVideo .containerGeneral .seccionGlobo h3 {
+        margin-bottom: 41px;
+        margin-top: 8px; }
+      .seccionVideo .containerGeneral .seccionGlobo progress[value] {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        /* Reinicializar estilos */
+        appearance: none;
+        -webkit-appearance: none; }
+      .seccionVideo .containerGeneral .seccionGlobo progress[value]::-webkit-progress-bar {
+        background-color: #b4b4b4; }
+      .seccionVideo .containerGeneral .seccionGlobo progress[value]::-webkit-progress-value {
+        background-color: #f7c9f3; }
+      .seccionVideo .containerGeneral .seccionGlobo .progress-div {
+        width: 324px;
+        height: 24px;
+        margin: auto; }
+      .seccionVideo .containerGeneral .seccionGlobo p {
+        margin-top: 8px;
+        padding: 0; }
+        .seccionVideo .containerGeneral .seccionGlobo p span {
+          text-decoration: line-through; }
+  .seccionVideo .Éxito {
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-    width: 832px;
-    height: 434px;
-    margin: 11px 17px 24px 11px; }
-    .seccionVideo .containerGeneral .videoContainer #video_init {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    width: 721px;
+    height: 391px;
+    padding: 3px; }
+    .seccionVideo .Éxito .makeGif {
+      background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+      height: 24px;
+      display: flex; }
+      .seccionVideo .Éxito .makeGif h3 {
+        color: white;
+        font-size: 14px;
+        margin-left: 4px; }
+      .seccionVideo .Éxito .makeGif a {
+        margin-left: 37px; }
+    .seccionVideo .Éxito .container_imgFinal {
       background: #FFFFFF;
       border: 1px solid #979797;
       box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-      padding: 3px; }
-  .seccionVideo .containerGeneral .timer-input {
-    margin-right: 21px; }
-    .seccionVideo .containerGeneral .timer-input h3 {
-      width: 124px;
-      height: 36px;
-      background: #FFFFFF;
-      border: 1px solid #979797;
-      box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-      text-align: center;
-      padding: 7px; }
-  .seccionVideo .containerGeneral button {
-    position: relative;
-    justify-items: flex-end;
-    width: 180px;
-    height: 36px;
-    background: #F7C9F3;
-    border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
-    .seccionVideo .containerGeneral button div {
-      position: absolute;
-      border: 1px solid #110038;
-      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-      width: 36px;
-      height: 36px;
-      top: -1px;
-      left: -1px; }
-      .seccionVideo .containerGeneral button div img {
-        margin: 8px; }
-    .seccionVideo .containerGeneral button h5 {
-      text-align: center;
-      font-family: 'ChakraPetch-Regular';
-      font-size: 16px;
-      color: #110038;
-      letter-spacing: 0;
-      text-align: center;
-      line-height: 18px; }
-  .seccionVideo .containerGeneral .listo {
-    background: #FF6161;
-    border: 1px solid #110038;
-    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
-    margin-left: 198px; }
-    .seccionVideo .containerGeneral .listo h5 {
-      color: #ffffff; }
+      width: 371px;
+      height: 196px;
+      margin: 27px; }
+    .seccionVideo .Éxito .container_buttons {
+      display: block; }
+      .seccionVideo .Éxito .container_buttons button {
+        width: 256px;
+        height: 36px;
+        margin-bottom: 14px;
+        background: #FFF4FD;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+      .seccionVideo .Éxito .container_buttons h3 {
+        margin-top: 49px;
+        margin-bottom: 16px; }
+    .seccionVideo .Éxito .Listo_final {
+      display: flex;
+      justify-content: flex-end; }
+      .seccionVideo .Éxito .Listo_final button {
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+        width: 144px;
+        height: 36px;
+        margin-right: 46px; }
 
 .seccion1 .mis_gifos {
   margin-top: 16px; }

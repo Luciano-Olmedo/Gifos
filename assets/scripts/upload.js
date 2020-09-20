@@ -1,5 +1,5 @@
 document.querySelector('.listo').style.display = "none";
-document.querySelector('#seccion-Video').style.display = "none";
+//document.querySelector('#seccion-Video').style.display = "none";
 document.querySelector('#repeatCapture').style.display = "none";
 document.querySelector('#uploadGif').style.display = "none";
 const contenedorPlantilla = document.querySelector(".mis_gifos");
@@ -45,6 +45,7 @@ function getStreamAndRecord() {
 //Funcion Detener
 function stop() {
     document.querySelector('.listo').addEventListener("click", function () {
+        document.getElementById("titulito_").innerHTML= "Vista Previa"
         document.querySelector('.listo').style.display = "none";
         document.querySelector('#repeatCapture').style.display = "block";
         document.querySelector('#uploadGif').style.display = "block";
@@ -60,6 +61,7 @@ function stop() {
 //Grabar gif
 function capture() {
     document.querySelector('.capturar').addEventListener("click", function () {
+        document.getElementById("titulito_").innerHTML= "Capturando Tu Guifo"
         document.querySelector('.capturar').style.display = "none";
         document.querySelector('.listo').style.display = "block";
         timer1.style.display="block";
@@ -70,6 +72,7 @@ function capture() {
 
 function upload_Gif() {
     document.querySelector('#uploadGif').addEventListener("click", function () {
+        document.getElementById("titulito_").innerHTML= "Subiendo Guifo"
         let blob = recorder.getBlob();
         let form = new FormData();
         form.append("file", blob, "gif.gif");
@@ -166,6 +169,7 @@ function timer() {
 function stopTimer() {
     clearInterval(Time);
 }
+
 
 sectionMisGifos();
 upload_Gif();

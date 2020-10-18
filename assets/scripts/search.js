@@ -50,19 +50,23 @@ function search(){
         clearScreen();
         let valor = valueButton1.innerHTML;
         refresh(valor);
-        getSearchResults(valor);        
+        getSearchResults(valor);  
+        nav2();  
+            
     });
     valueButton2.addEventListener("click",function () {
         clearScreen();
         let valor = valueButton2.innerHTML;
         refresh(valor);  
         getSearchResults(valor);
+        nav2();
     })
     valueButton3.addEventListener("click",function () {
         clearScreen();
         let valor = valueButton3.innerHTML;
         refresh(valor);   
-        getSearchResults(valor);            
+        getSearchResults(valor);    
+        nav2();        
     });
 
     function refresh(valor){
@@ -92,7 +96,17 @@ function clearScreen(){
     const cardContainer = document.querySelector('#refresh');
     cardContainer.innerHTML="";
 
+
 }
+function nav2(){
+    document.querySelector(".desplegable").style.display = "flex";
+    const bodyNav = document.body;
+    bodyNav.id= "hola";
+    
+
+
+}
+
 
 // esto me lleva mi galeria
 function misGifosTemplate(img) {

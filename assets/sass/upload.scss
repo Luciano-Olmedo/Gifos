@@ -26,14 +26,26 @@ section {
       letter-spacing: 0;
       line-height: 28px;
     }
-    button {
-      background: #f7c9f3;
+    .hover{
+      
       border: 1px solid #110038;
       box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
       width: 144px;
       height: 36px;
       margin: 28px 36px 36px 0;
       font-size: 16px;
+      padding:2px;
+
+    }
+    button {
+      
+      border:none;
+      background: #f7c9f3;
+      height: 100%;
+      width: 100%;
+      &:hover{
+        border: 1px dotted #000000;
+      }
     }
     .cancelar {
       background: #fff4fd;
@@ -42,16 +54,28 @@ section {
     .comenzar {
       background: #f7c9f3;
     }
+    #uploadGif{
+      width: 144px;
+      height: 36px;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    }
     #repeatCapture {
       margin-left: 75px;
       background: #fff4fd;
       border: 1px solid #110038;
       box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      width: 144px;
+      height: 36px;
+      
+      
     }
     .cancelar_{
       background: #FFF4FD;
       border: 1px solid #110038;
       box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+      width: 144px;
+      height: 36px;
 
     }
   }

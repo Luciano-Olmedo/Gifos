@@ -1,14 +1,21 @@
 // estado natural de la barra desplegable
 const natural = document.querySelector(".desplegable").style.display = "none";
 document.querySelector("#refresh").style.display = "none";
+const url = "https://api.giphy.com/v1/gifs/";
+const contenedorPlantilla = document.querySelector(".mis_gifos");
+const migaleria = document.querySelector("#migaleria");
+const seccion1 = document.querySelector(".seccion1");
+const seccionMisGifos = document.querySelector("#seccionMisGifos");
+seccionMisGifos.style.display="none";
+
+
 
 
 function getSearchResults(search) {
     const api = 'http://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + apiKey;
     fetch(api)
         .then(resolve => resolve.json())
-        .then(res => {
-            console.log(res)
+        .then(res => {            
            res.data.forEach(element => {
                 let title = element.title;
                 let img = element.images["original"]["url"];
@@ -22,7 +29,10 @@ function search(){
     const valueButton3 = document.querySelector("#thirdSuggest");
         
     document.getElementById("button_search").addEventListener("click",  function() {
-        let search = document.getElementById("value_search");      
+        let search = document.getElementById("value_search");     
+        document.getElementById("lupita").src="/assets/images/lupa.svg";
+        document.getElementById("buttonText").style="color: #110038;"
+        
        // desplegar menu       
        const natural = document.querySelector(".desplegable").style.display;
         if (natural == "none") {
@@ -60,7 +70,7 @@ function search(){
         document.querySelector(".gifs1").style.display="none";
         document.querySelector("#section2").style.display="none";
         document.querySelector(".desplegable").style.display="none";        
-        document.querySelector("#refresh").style.display="flex";
+        document.querySelector("#refresh").style.display="flex";        
         const titulo = document.querySelector(".trending");
         titulo.innerHTML = valor;
         }  
@@ -84,10 +94,47 @@ function clearScreen(){
 
 }
 
+// esto me lleva mi galeria
+function misGifosTemplate(img) {
+    const newGif = document.createElement("div");
+    const plantilla = `
+            <div class="cards col-3 ">
+                <img src="${img}" alt="${img}">
+            </div>
+            `;
+    newGif.innerHTML = plantilla;
+    contenedorPlantilla.appendChild(newGif);
+}
+function sectionMisGifos() {
+    let idGif = JSON.parse(localStorage.getItem("id"));
+    idGif.forEach(miGif);
+    function miGif(i) {
+        fetch(url + i + "?api_key=" + apiKey)
+            .then((response) => response.json())
+            .then((res) => {
+                let element = res.data;
+                let img = element.images.original.url;
+                misGifosTemplate(img);
+            });
+    }
+}
+
+migaleria.addEventListener("click",function(){
+    seccion1.style.display="none";
+    seccionMisGifos.style.display=" flex";
+    
+    
+
+
+});
+
+
+
+
 
 
 
 search();
-
+sectionMisGifos();
 
 

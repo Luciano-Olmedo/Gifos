@@ -52,45 +52,82 @@ header .logo {
       margin-right: 7px; }
 header .container1 {
   padding: 44px 16px 0 0; }
-header .boton1 {
+header .hoverboton1 {
   width: 144px;
   height: 36px;
-  background: #F7C9F3;
   border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  padding: 2px;
   margin: 0 16px; }
-header .boton2 {
+  header .hoverboton1 .boton1 {
+    width: 100%;
+    height: 100%;
+    background: #f7c9f3;
+    border: none; }
+    header .hoverboton1 .boton1:hover {
+      border: 1px dotted #000000; }
+header .hoverboton2 {
+  padding: 2px;
   width: 131px;
   height: 36px;
-  background: #F7C9F3;
   border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
-header .boton3 {
-  margin: -4px;
+  box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+  header .hoverboton2 .boton2 {
+    width: 100%;
+    height: 100%;
+    background: #f7c9f3;
+    border: none; }
+    header .hoverboton2 .boton2:hover {
+      border: 1px dotted #000000; }
+header .hoverboton3 {
+  padding: 2px;
   width: 36px;
   height: 36px;
-  background: #F7C9F3;
   border: 1px solid #110038;
-  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+  box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+  header .hoverboton3 .boton3 {
+    width: 100%;
+    height: 100%;
+    background: #f7c9f3;
+    border: none; }
+    header .hoverboton3 .boton3:hover {
+      border: 1px dotted #000000; }
 header .menu-desplegable {
   width: 167px;
   padding: 10px 10px 0 10px;
-  background-color: brown;
-  margin-left: 180px;
+  margin-left: 175px;
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+  background: #e6e6e6;
+  box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  margin-top: 36px; }
   header .menu-desplegable button {
     width: 150px;
     height: 36px;
     margin-bottom: 10px; }
+header #hoverMisGifos:hover {
+  border: 1px dotted #000000;
+  width: 95px;
+  height: 22px;
+  margin-left: 15px; }
+header #hoverMisGifos a {
+  text-decoration: none;
+  padding-left: 16.5px;
+  font-family: ChakraPetch-Regular;
+  font-size: 15px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 18px; }
+  header #hoverMisGifos a span {
+    text-decoration: underline; }
 header .container- {
   padding-left: 90px; }
   header .container- .container2 {
     width: 1200px;
     height: 99px;
     position: relative;
-    background: #E6E6E6;
-    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
     header .container- .container2 .title {
       background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
       height: 24px;
@@ -98,33 +135,58 @@ header .container- {
       margin: 3px; }
       header .container- .container2 .title h2 {
         font-size: 14px;
-        color: #FFFFFF;
+        color: #ffffff;
         letter-spacing: 0; }
     header .container- .container2 input {
       margin: 15px;
       height: 48px; }
     header .container- .container2 #button_search {
+      padding: 2px;
       width: 102px;
       height: 36px;
-      margin-top: 18px; }
+      margin-top: 18px;
+      background: #e6e6e6;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff; }
+      header .container- .container2 #button_search div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: auto; }
+        header .container- .container2 #button_search div h5 {
+          font-family: "Chakra Petch", sans-serif;
+          font-size: 16px;
+          color: #b4b4b4;
+          letter-spacing: 0;
+          line-height: 18px;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 10px; }
+        header .container- .container2 #button_search div img {
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 10px; }
+        header .container- .container2 #button_search div:hover {
+          border: 1px dotted #000000; }
     header .container- .container2 .desplegable {
-      background: #E6E6E6;
-      box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+      background: #e6e6e6;
+      box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
       width: 1200px;
       height: 160px;
       margin-top: 99px;
       padding: 16px 15px;
       position: absolute; }
       header .container- .container2 .desplegable .items {
-        background: #F0F0F0;
+        background: #f0f0f0;
         border: 1px solid #808080;
-        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+        box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
         width: 1057px;
         height: 36px;
         text-align: start;
         margin-bottom: 10px; }
 
 .seccion1 {
+  margin-top: 0;
   padding: 64px 0 0 0;
   margin-left: 90px; }
   .seccion1 .sugerencia {
@@ -135,13 +197,13 @@ header .container- {
     width: 1200px;
     height: 32px; }
     .seccion1 .sugerencia h3 {
-      font-family: 'Chakra Petch', sans-serif;
+      font-family: "Chakra Petch", sans-serif;
       font-size: 14px;
       color: #110038;
       letter-spacing: 0;
       margin: 7px; }
   .seccion1 .gifs1 {
-    padding: 22px 0; }
+    padding: 22px 0 64px 0; }
     .seccion1 .gifs1 .cards {
       background: #e6e6e6;
       box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
@@ -157,12 +219,23 @@ header .container- {
         .seccion1 .gifs1 .cards .bodyCards img {
           width: 100%;
           height: 100%; }
-        .seccion1 .gifs1 .cards .bodyCards .seeMore {
+          .seccion1 .gifs1 .cards .bodyCards img:hover {
+            border: 1px dotted #000000; }
+        .seccion1 .gifs1 .cards .bodyCards .botonsirri {
           width: 81px;
           height: 34px;
+          padding: 2px;
           position: absolute;
-          background-color: #4180F6;
-          margin: -7px 15px; }
+          margin: 15px 15px;
+          border: 1px solid #4c2f99;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff; }
+          .seccion1 .gifs1 .cards .bodyCards .botonsirri .seeMore {
+            width: 100%;
+            height: 100%;
+            background-color: #4180F6;
+            border: none; }
+            .seccion1 .gifs1 .cards .bodyCards .botonsirri .seeMore:hover {
+              border: 1px dotted #000000; }
       .seccion1 .gifs1 .cards .contenedor- {
         width: 280px;
         height: 24px;
@@ -184,74 +257,163 @@ header .container- {
     .seccion1 .gifs2 .cards2 {
       width: 592px;
       height: 298px;
-      background-color: grey;
+      position: relative;
       margin-right: 16px;
       margin-top: 16px; }
-      .seccion1 .gifs2 .cards2 img {
+      .seccion1 .gifs2 .cards2 .contenedor- {
+        position: relative;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        margin-bottom: 10px;
+        align-items: flex-end; }
+        .seccion1 .gifs2 .cards2 .contenedor-:hover {
+          padding: 4px;
+          background: #e6e6e6;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+        .seccion1 .gifs2 .cards2 .contenedor- img {
+          width: 100%;
+          height: 100%; }
+          .seccion1 .gifs2 .cards2 .contenedor- img:hover {
+            border: 1px dotted #000000; }
+        .seccion1 .gifs2 .cards2 .contenedor- .containerTitle {
+          display: none; }
+          .seccion1 .gifs2 .cards2 .contenedor- .containerTitle .titulito {
+            display: none; }
+        .seccion1 .gifs2 .cards2 .contenedor-:hover .containerTitle {
+          position: absolute;
+          display: block;
+          background-color: green;
+          width: 100%;
+          height: 24px; }
+          .seccion1 .gifs2 .cards2 .contenedor-:hover .containerTitle .titulito {
+            display: block;
+            font-size: 14px;
+            color: #ffffff;
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; }
     .seccion1 .gifs2 .cards {
       width: 286px;
       height: 296px;
       margin-right: 18px;
-      margin-top: 16px;
-    /* .contenedor-{
-              position: relative;
-              width: 286px;
-              height: 296px;
-              margin-bottom: 10px;
-              
-              align-items: flex-end;
-              img{
-                  width: 100%;
-                  height: 100%;
-              }
-              .containertitle{
-                 position: absolute;
-                 background-color: green;
-                 width: 100%;
-                  .titulito{
-                      font-size: 14px;
-                      height: 24px;
-                      color: #ffffff;
-                      
-                  }
-                  
-                            
-              }
-  
-              
-          }
-         */ }
+      margin-top: 16px; }
       .seccion1 .gifs2 .cards img {
         width: 100%;
         height: 100%; }
     .seccion1 .gifs2 .cards3 {
-      background-color: red;
+      position: relative;
       width: 286px;
       height: 296px;
       margin-right: 16px;
       margin-top: 16px; }
       .seccion1 .gifs2 .cards3 .contenedor- {
         position: relative;
-        width: 286px;
-        height: 296px;
+        width: 100%;
+        height: 100%;
         margin-bottom: 10px;
         align-items: flex-end; }
+        .seccion1 .gifs2 .cards3 .contenedor-:hover {
+          padding: 4px;
+          background: #e6e6e6;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
         .seccion1 .gifs2 .cards3 .contenedor- img {
           width: 100%;
           height: 100%; }
-        .seccion1 .gifs2 .cards3 .contenedor- .containertitle {
+          .seccion1 .gifs2 .cards3 .contenedor- img:hover {
+            border: 1px dotted #000000; }
+        .seccion1 .gifs2 .cards3 .contenedor- .containerTitle {
+          display: none; }
+          .seccion1 .gifs2 .cards3 .contenedor- .containerTitle .titulito {
+            display: none; }
+        .seccion1 .gifs2 .cards3 .contenedor-:hover .containerTitle {
           position: absolute;
+          display: block;
           background-color: green;
-          width: 100%; }
-          .seccion1 .gifs2 .cards3 .contenedor- .containertitle .titulito {
+          width: 286px;
+          height: 24px; }
+          .seccion1 .gifs2 .cards3 .contenedor-:hover .containerTitle .titulito {
+            display: flex;
             font-size: 14px;
-            height: 24px;
-            color: #ffffff; }
+            color: #ffffff;
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap; }
 
 .darkBody {
   background-color: #110038; }
+  .darkBody header div p {
+    background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+    box-shadow: 0 1px 0 0 #110038; }
+  .darkBody header .hoverboton1 .boton1 {
+    width: 100%;
+    height: 100%;
+    background: #ee3efe;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px; }
+  .darkBody header .hoverboton2 .boton2 {
+    width: 100%;
+    height: 100%;
+    background: #ee3efe;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px; }
+  .darkBody header .hoverboton3 .boton3 {
+    width: 100%;
+    height: 100%;
+    background: #ee3efe;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+  .darkBody header #hoverMisGifos a {
+    text-decoration: none;
+    padding-left: 16.5px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 18px; }
+  .darkBody header .container- .container2 .title {
+    height: 24px;
+    padding: 3px;
+    margin: 3px;
+    background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%); }
+  .darkBody .container- .container2 {
+    width: 1200px;
+    height: 99px;
+    position: relative;
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF; }
+    .darkBody .container- .container2 #button_search .button_specific {
+      background: #B4B4B4;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+      .darkBody .container- .container2 #button_search .button_specific h5 {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 16px;
+        color: #8F8F8F;
+        letter-spacing: 0;
+        line-height: 18px; }
+  .darkBody .seccion1 .gifs1 .cards {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF; }
+    .darkBody .seccion1 .gifs1 .cards .contenedor- {
+      margin: 3px 0 3px 2px;
+      background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+      .darkBody .seccion1 .gifs1 .cards .contenedor- h3 {
+        font-size: 14px;
+        width: 90%;
+        color: #fff; }
 
 section {
   margin-top: 78px; }
@@ -276,28 +438,44 @@ section {
       color: #110038;
       letter-spacing: 0;
       line-height: 28px; }
-    section .containerGeneral button {
-      background: #f7c9f3;
+    section .containerGeneral .hover {
       border: 1px solid #110038;
       box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
       width: 144px;
       height: 36px;
       margin: 28px 36px 36px 0;
-      font-size: 16px; }
+      font-size: 16px;
+      padding: 2px; }
+    section .containerGeneral button {
+      border: none;
+      background: #f7c9f3;
+      height: 100%;
+      width: 100%; }
+      section .containerGeneral button:hover {
+        border: 1px dotted #000000; }
     section .containerGeneral .cancelar {
       background: #fff4fd;
       margin-right: 16px; }
     section .containerGeneral .comenzar {
       background: #f7c9f3; }
+    section .containerGeneral #uploadGif {
+      width: 144px;
+      height: 36px;
+      border: 1px solid #110038;
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
     section .containerGeneral #repeatCapture {
       margin-left: 75px;
       background: #fff4fd;
       border: 1px solid #110038;
-      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+      box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      width: 144px;
+      height: 36px; }
     section .containerGeneral .cancelar_ {
       background: #FFF4FD;
       border: 1px solid #110038;
-      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
+      box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+      width: 144px;
+      height: 36px; }
 
 .seccionVideo {
   margin-bottom: 268px; }

@@ -1,129 +1,199 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-header{
+header {
+  div {
+    p {
+      height: 23px;
+      background-image: linear-gradient(
+        270deg,
+        $firstColor 0%,
+        $secondColor 100%
+      );
+      box-shadow: 0 1px 0 0 #110038;
+    }
+  }
+  .logo {
+    padding: 39px 0 0 91px;
+    a {
+      text-decoration: none;
+      #arrow {
+        padding-bottom: 10px;
+        margin-right: 7px;
+      }
+    }
+  }
+  .container1 {
+    padding: 44px 16px 0 0;
+  }
+  .hoverboton1 {
+    width: 144px;
+    height: 36px;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    padding: 2px;
+    margin: 0 16px;
+    .boton1 {
+      width: 100%;
+      height: 100%;
+      background: #f7c9f3;
+      border: none;
+      &:hover {
+        border: 1px dotted #000000;
+      }
+    }
+  }
+  .hoverboton2 {
+    padding: 2px;
+    width: 131px;
+    height: 36px;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    .boton2 {
+      width: 100%;
+      height: 100%;
+      background: #f7c9f3;
+      border: none;
+      &:hover {
+        border: 1px dotted #000000;
+      }
+    }
+  }
+  .hoverboton3 {
+    padding: 2px;
 
-    div{
-        
-        p{
-            height: 23px;
-            background-image: linear-gradient(270deg, $firstColor 0%, $secondColor 100%);
-            box-shadow: 0 1px 0 0 #110038
+    width: 36px;
+    height: 36px;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    .boton3 {
+      width: 100%;
+      height: 100%;
+      background: #f7c9f3;
+      border: none;
+      &:hover {
+        border: 1px dotted #000000;
+      }
+    }
+  }
+
+  .menu-desplegable {
+    width: 167px;
+    padding: 10px 10px 0 10px;
+    margin-left: 175px;
+    position: absolute;
+    z-index: 1;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+    margin-top: 36px;
+    button {
+      width: 150px;
+      height: 36px;
+      margin-bottom: 10px;
+    }
+  }
+  #hoverMisGifos {
+    &:hover {
+      border: 1px dotted #000000;
+      width: 95px;
+      height: 22px;
+      margin-left: 15px;
+    }
+    a {
+      text-decoration: none;
+      padding-left: 16.5px;
+      font-family: ChakraPetch-Regular;
+      font-size: 15px;
+      color: #110038;
+      letter-spacing: 0;
+      line-height: 18px;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .container- {
+    padding-left: 90px;
+    .container2 {
+      width: 1200px;
+      height: 99px;
+      position: relative;
+      background: #e6e6e6;
+      box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+
+      .title {
+        background-image: linear-gradient(
+          270deg,
+          $firstColor 0%,
+          $secondColor 100%
+        );
+        height: 24px;
+        padding: 3px;
+        margin: 3px;
+        h2 {
+          font-size: 14px;
+          color: #ffffff;
+          letter-spacing: 0;
         }
-        
-    }
-    .logo{
-        padding: 39px 0 0 91px;
-        a{
-            text-decoration: none;
-            #arrow{
-                padding-bottom: 10px;
-                margin-right: 7px;
-            }
-        }
-    }
-    .container1{
-        padding:44px 16px 0 0;
+      }
 
-    }
-    .boton1{
-        width: 144px;
+      input {
+        margin: 15px;
+        height: 48px;
+      }
+      #button_search {
+        padding: 2px;
+        width: 102px;
         height: 36px;
-        background: #F7C9F3;
-        border: 1px solid #110038;
-        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-        margin:0 16px;
-        
-        
-    }
-    .boton2{        
-        width: 131px;
-        height: 36px;
-        background: #F7C9F3;
-        border: 1px solid #110038;
-        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-    }
-    .boton3{
-        margin: -4px;
-        width: 36px;
-        height: 36px;
-        background: #F7C9F3;
-        border: 1px solid #110038;
-        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-    }
-    .menu-desplegable{
-        width: 167px;
-        padding: 10px 10px 0 10px;
-        background-color: brown;
-        margin-left:180px;
+        margin-top: 18px;
+        background: #e6e6e6;
+        border: 1px solid #808080;
+        box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+        div {
+          //padding: 9px 0 0 9px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          margin: auto;
+          h5 {
+            font-family: "Chakra Petch", sans-serif;
+            font-size: 16px;
+            color: #b4b4b4;
+            letter-spacing: 0;
+            line-height: 18px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+          }
+          img {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+          }
+          &:hover {
+            border: 1px dotted #000000;
+          }
+        }
+      }
+      .desplegable {
+        background: #e6e6e6;
+        box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+        width: 1200px;
+        height: 160px;
+        margin-top: 99px;
+        padding: 16px 15px;
         position: absolute;
-        z-index: 1;
-        button{
-            width:150px;
-            height: 36px;
-            margin-bottom: 10px;
+        .items {
+          background: #f0f0f0;
+          border: 1px solid #808080;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          width: 1057px;
+          height: 36px;
+          text-align: start;
+          margin-bottom: 10px;
         }
+      }
     }
-    
-
-    .container-{
-        
-        padding-left: 90px;
-        .container2{        
-            width: 1200px;
-            height: 99px;            
-            position: relative;
-            background: #E6E6E6;
-            box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-            
-            
-            .title {
-                background-image: linear-gradient(270deg, $firstColor 0%, $secondColor 100%);
-                height: 24px;
-                padding: 3px;
-                margin: 3px;
-                h2{                    
-                    font-size: 14px;
-                    color: #FFFFFF;
-                    letter-spacing: 0;                             
-                   
-                }
-            }                 
-            
-            input{                    
-                margin:15px;                
-                height: 48px;
-            }
-            #button_search{
-                width: 102px;
-                height: 36px;
-                margin-top: 18px;        
-            }            
-            .desplegable{
-           
-                background: #E6E6E6;
-                box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-                width: 1200px;
-                height: 160px;
-                margin-top:99px;
-                padding:16px 15px;                
-                position: absolute;                
-                .items{
-                    background: #F0F0F0;
-                    border: 1px solid #808080;
-                    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-                    width: 1057px;
-                    height: 36px;
-                    text-align: start;
-                    margin-bottom: 10px;                    
-                }
-            }
-        
-        }       
-
-    }
-
-    
-    
-    
-    
+  }
 }

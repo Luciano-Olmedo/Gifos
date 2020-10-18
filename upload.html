@@ -1,138 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="cualquiera">
-        <div class="col-12">
-            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+      <div class="col-12">
+        <p>
+          ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
+          de visitas: 12.765.803
+        </p>
+      </div>
+      <div class="cualquiera col-12">
+        <div class="logo col-6">
+          <a href="index.html">
+            <img id="arrow" src="./assets/images/arrow.svg" alt="arrow" />
+            <img
+              id="logotipo"
+              src="./assets/images/gifOF_logo.png"
+              alt="logo"
+            />
+          </a>
         </div>
-        <div class="cualquiera col-12">
-            <div class="logo col-6">
-                <a href="index.html">
-                    <img id="arrow" src="./assets/images/arrow.svg" alt="arrow">
-                    <img id="logotipo" src="./assets/images/gifOF_logo.png" alt="logo">
-                </a>
-            </div>
-        </div>
+      </div>
     </header>
     <section class="cualquiera" id="make-Gif" style="justify-content: center">
-        <div class="col-6  containerGeneral">
-            <h3 class=" makeGif col-12">Crear Guifos</h3>
-            <div class="tituloCrear col-12 cualquiera">
-                <img src="./assets/images/window-img.png" alt="ventana">
-                <h3><b>Aquí podrás crear tus propios guifos</b></h3>
-            </div>
-            <div>
-                <p>
-                    Crear tu <b><i>guifo</i></b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos<br>
-                    personalizados. Los pasos para crear tu guifo son:<br>
-                    <b>1)</b>Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
-                    <b>2)</b>Capturar tu momento guifo<br>
-                    <b>3)</b>Revisar el momento<br>
-                    <b>4)</b>Listo para subir y compartir!<br>
-                    ¿Quieres comenzar a crear tu <b><i>guifo</i></b> ahora?
-
-                </p>
-            </div>
-            <div class="cualquiera" style="justify-content: flex-end">
-                <button class="cancelar" onclick="cancelarCaptura()">Cancelar</button>
-                <button class="comenzar">Comenzar</button>
-            </div>
+      <div class="col-6 containerGeneral">
+        <h3 class="makeGif col-12">Crear Guifos</h3>
+        <div class="tituloCrear col-12 cualquiera">
+          <img src="./assets/images/window-img.png" alt="ventana" />
+          <h3><b>Aquí podrás crear tus propios guifos</b></h3>
         </div>
+        <div>
+          <p>
+            Crear tu <b><i>guifo</i></b> es muy fácil, graba cualquier imagen
+            con tu cámara y obtén guifos<br />
+            personalizados. Los pasos para crear tu guifo son:<br />
+            <b>1)</b>Dar permisos de acceso a la cámara (sólo por el tiempo de
+            uso) <br />
+            <b>2)</b>Capturar tu momento guifo<br />
+            <b>3)</b>Revisar el momento<br />
+            <b>4)</b>Listo para subir y compartir!<br />
+            ¿Quieres comenzar a crear tu <b><i>guifo</i></b> ahora?
+          </p>
+        </div>
+        <div class="cualquiera" style="justify-content: flex-end">
+          <div class="hover">
+            <button class="cancelar" onclick="cancelarCaptura()">
+              Cancelar
+            </button>
+          </div>
+          <div class="hover"><button class="comenzar">Comenzar</button></div>
+        </div>
+      </div>
     </section>
 
-    <section class="seccionVideo cualquiera col-12" id="seccion-Video" style="justify-content: center">
-        <div id="id_video" class="containerGeneral col-7">
-            <h3 id="titulito_" class=" makeGif col-12">Un Chequeo Antes de Empezar</h3>
-            <div class="videoContainer">
-                <video id="video_init" src="#"></video>
-            </div>
-            <div class="seccionGlobo">
-                <img src="./assets/images/globe_img.png" alt="globe">
-                <h3>Estamos subiendo tu guifo…</h3>
-                <div class="col-12 progress-div">
-                    <progress id="file" value="0" max="100"></progress>
-                </div>
-                <p>Tiempo restante: <span>38 años</span> algunos minutos</p>
-            </div>
-            <div class="cualquiera" style="justify-content: flex-end">
-                <!--timer-->
-                <div class="timer-input col-6">
-                    <h3 class="timer-text">
-                        0:0:00
-                    </h3>
-                </div>
-                <button id="repeatCapture" onclick="repetirGif()">
-                    Repetir Captura
-                </button>
-                <button id="uploadGif">
-                    Subir Gif
-                </button>
-                <div class="capturar button_">
-                    <div>
-                        <img src="./assets/images/camera.svg" alt="camera">
-                    </div>
-                    <h5>Capturar</h5>
-                </div>
-                <div class="listo button_">
-                    <div>
-                        <img src="./assets/images/recording.svg" alt="REC">
-                    </div>
-                    <h5>Listo</h5>
-                </div>
-                <button class="cancelar_" onclick="cancelarCaptura()">
-                    Cancelar
-                </button>
-            </div>
+    <section
+      class="seccionVideo cualquiera col-12"
+      id="seccion-Video"
+      style="justify-content: center"
+    >
+      <div id="id_video" class="containerGeneral col-7">
+        <h3 id="titulito_" class="makeGif col-12">
+          Un Chequeo Antes de Empezar
+        </h3>
+        <div class="videoContainer">
+          <video id="video_init" src="#"></video>
         </div>
-        <div class="Éxito">
-            <div class="makeGif col-12">
-                <h3 class="col-11">
-                    Guifo Subido Con Éxito
-                </h3>
-                <a href="index.html"><img src="./assets/images/close.svg" alt="close"></a>
-            </div>
-            <div class="cualquiera">
-                <div class="container_imgFinal">
-                    <img id="img_gif_final" src="#" alt="">
-                </div>
-                <div class="col-4 container_buttons">
-                    <h3>Guifo creado con éxito</h3>
-                    <button class="enlace">
-                        Copiar Enlace Guifo
-                    </button>
-                    <button class="descargar">
-                        Descargar Guifo
-                    </button>
-                </div>
-            </div>
-            <div class="Listo_final">
-                <button class="listo">
-                    Listo
-                </button>
-            </div>
+        <div class="seccionGlobo">
+          <img src="./assets/images/globe_img.png" alt="globe" />
+          <h3>Estamos subiendo tu guifo…</h3>
+          <div class="col-12 progress-div">
+            <progress id="file" value="0" max="100"></progress>
+          </div>
+          <p>Tiempo restante: <span>38 años</span> algunos minutos</p>
+        </div>
+        <div class="cualquiera" style="justify-content: flex-end">
+          <!--timer-->
+          <div class="timer-input col-6">
+            <h3 class="timer-text">0:0:00</h3>
+          </div>
+          <button id="repeatCapture" onclick="repetirGif()">
+            Repetir Captura
+          </button>
+          <button id="uploadGif">Subir Gif</button>
 
+          <div class="capturar button_">
+            <div>
+              <img src="./assets/images/camera.svg" alt="camera" />
+            </div>
+            <h5>Capturar</h5>
+          </div>
+          <div class="listo button_">
+            <div>
+              <img src="./assets/images/recording.svg" alt="REC" />
+            </div>
+            <h5>Listo</h5>
+          </div>
+          <button class="cancelar_" onclick="cancelarCaptura()">
+            Cancelar
+          </button>
         </div>
+      </div>
+      <div class="Éxito">
+        <div class="makeGif col-12">
+          <h3 class="col-11">Guifo Subido Con Éxito</h3>
+          <a href="index.html"
+            ><img src="./assets/images/close.svg" alt="close"
+          /></a>
+        </div>
+        <div class="cualquiera">
+          <div class="container_imgFinal">
+            <img id="img_gif_final" src="#" alt="" />
+          </div>
+          <div class="col-4 container_buttons">
+            <h3>Guifo creado con éxito</h3>
+            <button class="enlace">Copiar Enlace Guifo</button>
+            <button class="descargar">Descargar Guifo</button>
+          </div>
+        </div>
+        <div class="Listo_final">
+          <button class="listo" onclick="cancelarCaptura()">Listo</button>
+        </div>
+      </div>
     </section>
 
     <section id="seccionMisGifos" class="seccion1 cualquiera col-12">
-        <div class="today  sugerencia col-10">
-            <h3>Mis gifos </h3>
-        </div>
-        <div class="mis_gifos cualquiera col-12">
-
-        </div>
+      <div class="today sugerencia col-10">
+        <h3>Mis gifos</h3>
+      </div>
+      <div class="mis_gifos cualquiera col-12"></div>
     </section>
     <script src="./assets/scripts/upload.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
-</body>
-
+  </body>
 </html>

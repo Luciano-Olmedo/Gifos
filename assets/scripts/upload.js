@@ -14,6 +14,7 @@ const urlUpload = "https://upload.giphy.com/v1/gifs?api_key=" + apiKey;
 const url = "https://api.giphy.com/v1/gifs/";
 const timer1 = document.querySelector(".timer-input");
 timer1.style.display = "none";
+let idGif = [];
 
 
 //Funcion Comenzar
@@ -100,6 +101,7 @@ function upload_Gif() {
                     document.querySelector("#id_video").style.display = "none";
                     document.querySelector(".Éxito").style.display = "block";
                     document.querySelector("#seccionMisGifos").style.display = "block";
+                    document.querySelector('#seccion-Video').style.margin = "0 0 38px 0"
                 }
                 else if (data.error) {
                     alert(data.errors);

@@ -34,7 +34,7 @@ function gifCards(title, img) {
                     </div>                        
                     <div class="bodyCards ">
                             <img src="${img}">
-                            <button class="seeMore" onclick = "seeMoreAction(${i})">ver mas</button>
+                            <div class="botonsirri"><button class="seeMore" onclick = "seeMoreAction(${i})">ver mas</button></div>
                      </div>
              </div>
         </div>

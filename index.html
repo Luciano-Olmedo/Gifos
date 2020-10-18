@@ -2,48 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header class="cualquiera">
+    <header class="cualquiera ">
         <div class="col-12">
-            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+            <p>
+                ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
+                de visitas: 12.765.803
+            </p>
         </div>
         <div class="cualquiera col-12">
             <div class="logo col-6">
-                <a href="index.html"><img id="logotipo" src="./assets/images/gifOF_logo.png" alt="logo"></a>
+                <a href="index.html"><img id="logotipo" src="./assets/images/gifOF_logo.png" alt="logo" /></a>
             </div>
             <!--container 1-->
-            <div class="container1 col-4">
-                <button class="boton1" onclick="repetirGif()">Crear Guifos</button>
-                <button class="boton2">Elegir Tema</button>
-                <button class="boton3"><img src="./assets/images/dropdown.svg" alt="dropdown"></button>
-                <a href="#">Mis guifos</a>
+            <div class="container1 cualquiera col-5">
+                <div class="hoverboton1">
+                    <button class="boton1" onclick="repetirGif()">Crear Guifos</button>
+                </div>
+                <div class="hoverboton2"><button class="boton2">Elegir Tema</button></div>
+                <div class="hoverboton3">
+                    <button class="boton3">
+                        <img src="./assets/images/dropdown.svg" alt="dropdown" />
+                    </button>
+                </div>
+                <div id="hoverMisGifos"><a href="#" id="migaleria"><span>M</span>is Guifos</a></div>
+
+
                 <div class="menu-desplegable" id="menu_desplegable">
                     <button class="sailorDay">Sailor Day</button>
                     <button class="sailorNight">Sailor Night</button>
-
                 </div>
-
-
             </div>
         </div>
         <div class="cualquiera col-12 container-">
             <div class="cualquiera col-10 container2">
                 <div class="col-12 title">
-                    <h2> buscar</h2>
+                    <h2>Buscar</h2>
+
                 </div>
+
                 <!--Input y boton buscar-->
                 <div class="input cualquiera col-12">
-                    <input class="col-10" type="text" placeholder="Ejemplo de gif" id="value_search">
-                    <button class="col-1 " id="button_search">Buscar</button>
+                    <input class="col-10" type="text" placeholder="Ejemplo de gif" id="value_search" />
+                    <div class="col-1" id="button_search">
+                        <div class="button_specific">
+                            <img id="lupita" src="./assets/images/lupa_inactive.svg" alt="lupa">
+                            <h5 id="buttonText">Buscar</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class=" desplegable col-10 ">
+                <div class="desplegable col-10">
                     <button class="col-8 items" id="firstSuggest"></button>
                     <button class="col-8 items" id="secondSuggest"></button>
                     <button class="col-8 items" id="thirdSuggest"></button>
@@ -53,34 +68,33 @@
     </header>
     <!--Seccion guifos-->
     <section class="seccion1 cualquiera col-12">
-        <div class="today  sugerencia col-10">
-            <h3>Hoy te sugerimos </h3>
+        <div class="today sugerencia col-10">
+            <h3>Hoy te sugerimos</h3>
         </div>
-        <div class="gifs1 cualquiera col-12">
-
-        </div>
+        <div class="gifs1 cualquiera col-12"></div>
         <!--Segunda parte de gif -->
-        <div class="col-10 sugerencia cualquiera ">
-            <h3 class="trending">Tendencias </h3>
+        <div class="col-10 sugerencia cualquiera">
+            <h3 class="trending">Tendencias</h3>
         </div>
         <div class="gifs2 cualquiera col-12" id="section2">
-            <div class="cards3 cualquiera col-3">
-                <div class=" contenedor- cualquiera">
-                    <img class="img" src="#" alt="">
-                    <div class="containertitle">
-                        <h3 class="titulito">#</h3>
-                    </div>
-                </div>
-            </div>
+
         </div>
-        <div class="gifs2 cualquiera col-12" id="refresh">
-        </div>
+        <div class="gifs2 cualquiera col-12" id="refresh"></div>
+
     </section>
-    <script src="./assets/scripts/main.js"></script>
-    <script src="./assets/scripts/search.js"></script>
-    <script src="./assets/scripts/suggest.js"></script>
-    <script src="./assets/scripts/trending.js"></script>
-    <script src="./assets/scripts/themes.js"></script>
+    <section id="seccionMisGifos" class="seccion1 cualquiera col-12">
+        <div class="today  sugerencia col-10">
+            <h3>Mis gifos </h3>
+        </div>
+        <div class="mis_gifos cualquiera col-12">
+
+        </div>
+        <script src="./assets/scripts/main.js"></script>
+        <script src="./assets/scripts/search.js"></script>
+        <script src="./assets/scripts/suggest.js"></script>
+        <script src="./assets/scripts/trending.js"></script>
+        <script src="./assets/scripts/themes.js"></script>
+    </section>
 </body>
 
 </html>
